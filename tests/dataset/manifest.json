@@ -1,0 +1,36 @@
+{
+  "source": "fixture.z64",
+  "rom_sha256": "a714ba4b7515acf8459ac72378f15b197a1d7db0187094a21ba0bdd6a400e46c",
+  "title": "ROMFORGE FIXTURE",
+  "byte_order": "z64",
+  "assets": [
+    {
+      "file": "tex_003E50_a714ba4b.png",
+      "rom_offset": "0x3E50",
+      "format": "RGBA5551",
+      "w": 16,
+      "h": 16,
+      "sha256": "c41ff7001cb30ca8a6f3d4a35161070142f015909b1a76b0423307c1b99e85bc",
+      "scan_alpha_balance": 0.156,
+      "scan_variance": 59553,
+      "provenance": {
+        "extractor": "n64.extract v1",
+        "decoder": "n64tex (round-trip verified)"
+      }
+    },
+    {
+      "file": "tex_007E50_a714ba4b.png",
+      "rom_offset": "0x7E50",
+      "format": "RGBA5551",
+      "w": 16,
+      "h": 16,
+      "sha256": "bd1fe5d2d6ff1346c5bd1e35a1364ebf44070f583fe49f4ef05c7c00b9a96b82",
+      "scan_alpha_balance": 0.156,
+      "scan_variance": 65535,
+      "provenance": {
+        "extractor": "n64.extract v1",
+        "decoder": "n64tex (round-trip verified)"
+      }
+    }
+  ]
+}
