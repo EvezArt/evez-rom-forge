@@ -15,7 +15,9 @@ def extract(rom_path, outdir):
         "title": h["name"], "byte_order": order,
         "assets": [],
     }
-    for off, bal, var in scan_textures(raw, max_hits=24):
+    import sys as _s
+    max_hits = int(dict(zip(_s.argv, _s.argv[1:])).get("--max", 48)) if "--max" in _s.argv else 48
+    for off, bal, var in scan_textures(raw, max_hits=max_hits):
         block = raw[off:off+512]
         rows = decode("RGBA5551", block, 16, 16)
         fn = f"tex_{off:06X}_{manifest['rom_sha256'][:8]}.png"

@@ -22,9 +22,18 @@ def load(path):
 
 def parse_header(raw):
     h = {}
-    (h["pi_bsi"], h["clock_rate"], h["entry"], h["release"], h["crc1"], h["crc2"],
-     _unk, h["name"], h["media"], h["cart_id"], h["region"], h["version"]) = struct.unpack_from(">I I Q I I I 2s 20s H s s I", raw, 0)
+    # canonical 64-byte z64 cartridge header (N64 Programming Manual):
+    # 0x00 PI dom1 config, 0x04 clock rate, 0x08 entry (u32), 0x0C release,
+    # 0x10/0x14 CRC1/2, 0x18-0x1F unused, 0x20 title (20B), 0x34 media (2B),
+    # 0x36 cart id (2B), 0x38 region, 0x39 version, 0x3A-0x3F unused
+    (h_pi, h["clock_rate"], h["entry"], h["release"], h["crc1"], h["crc2"],
+     _u18, h["name"], h["media"], h["cart_id"], h["region"], h["version"],
+     _u3a) = struct.unpack_from(">I I I I I I 8s 20s 2s 2s c c 6s", raw, 0)
     h["name"] = h["name"].decode("ascii", "replace").rstrip("\x00 ")
+    h["media"] = h["media"].decode("ascii", "replace").rstrip("\x00 ")
+    h["cart_id"] = h["cart_id"].decode("ascii", "replace").rstrip("\x00 ")
+    h["region"] = h["region"].decode("ascii", "replace")
+    h["version"] = h["version"].decode("ascii", "replace") if isinstance(h["version"], bytes) else h["version"]
     return h
 
 def strings(raw, minlen=6, limit=40):
@@ -68,7 +77,7 @@ def main():
     print(f"== N64 DISSECT: {os.path.basename(path)} ==")
     print(f"byte order : {order}  size: {len(raw)} bytes ({len(raw)/1048576:.2f} MiB)")
     print(f"title     : {h['name']!r}")
-    print(f"media     : {h['media']}  cart_id: {h['cart_id'].decode()}  region: {h['region'].decode()}  v{h['version']}")
+    print(f"media     : {h['media']!r}  cart_id: {h['cart_id']!r}  region: {h['region']!r}  v{h['version']}")
     print(f"entry     : 0x{h['entry']:X}  crc1: 0x{h['crc1']:08X}  crc2: 0x{h['crc2']:08X}")
     segs = [("header", 0, 0x40), ("boot", 0x40, 0x1000), ("code", 0x1000, None)]
     print("segments  :")

@@ -10,9 +10,9 @@ grad = [[(x*16, y*16, (x+y)*8, 255) for x in range(W)] for y in range(H)]
 check = [[(255,255,255,255) if (x+y)%2 else (40,40,40,255) for x in range(W)] for y in range(H)]
 
 rom = bytearray(b"\x00" * 0x10000)
-hdr = struct.pack(">I I Q I I I 2s 20s H s s I",
-    0x80371240, 0x000F, 0x80000400, 0x00000000, 0x0, 0x0, b"\x00"*2,
-    b"ROMFORGE FIXTURE \x00\x00\x00\x00\x00", 0x4E, b"\x45", b"\x41", 0x00)
+hdr = struct.pack(">I I I I I I 8s 20s 2s 2s c c 6s",
+    0x80371240, 0x000F, 0x80000400, 0x00000000, 0x0, 0x0, b"\x00"*8,
+    b"ROMFORGE FIXTURE\x00\x00\x00\x00\x00", b"N\x00", b"RF", b"E", b"\x00", b"\x00"*6)
 rom[0:0x40] = hdr
 tex1 = encode("RGBA5551", grad)
 tex2 = encode("RGBA5551", check)
