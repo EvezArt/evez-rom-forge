@@ -1,0 +1,282 @@
+{
+  "generator": "n64.synthesize v0",
+  "method": "polysemantic feature-space crossover",
+  "parents_corpus": [
+    "gamejam2024.z64",
+    "junkrunner.z64"
+  ],
+  "generated": [
+    {
+      "file": "synth_000_14a2f107.png",
+      "sha256": "14a2f10750d25a69cb7f02d3f3955f2c720c51d7245503c886f79195b2a8cbc4",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0xC800"
+        },
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x7800"
+        }
+      ],
+      "cluster": 5,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_001_8721765b.png",
+      "sha256": "8721765bbd5282323539873c44cc51b3df4de24eb78d01b6ca6b17bc4dbd8fee",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x6800"
+        },
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x5800"
+        }
+      ],
+      "cluster": 3,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_002_40cbcf8b.png",
+      "sha256": "40cbcf8bdd1e77a16de51f16f5c3fa5304ca61874b8176cab64732f64ee90a90",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x1F800"
+        },
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x11000"
+        }
+      ],
+      "cluster": 4,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_003_997b4ea8.png",
+      "sha256": "997b4ea857b6c0120e0f881c5d78b66cdad283d56cd30a9ba5152773163ea74a",
+      "parents": [
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x19000"
+        },
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x3000"
+        }
+      ],
+      "cluster": 3,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_004_2ce49aea.png",
+      "sha256": "2ce49aea4ca8cc257e8e6be8c8fb7cb3305bc07df00290eb65174d40e1e2731d",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x2000"
+        },
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0xF000"
+        }
+      ],
+      "cluster": 2,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_005_482d03b7.png",
+      "sha256": "482d03b748f97cc96642bc53e8e4a7b3182b38ab8016014d6259acea2e634067",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x11800"
+        },
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x1F000"
+        }
+      ],
+      "cluster": 3,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_006_975db96e.png",
+      "sha256": "975db96ed9602bc70db68bf37ee73901e9e5b84c005bc0b245f7554db7f18955",
+      "parents": [
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x1C000"
+        },
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x1D000"
+        }
+      ],
+      "cluster": 4,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_007_57135df6.png",
+      "sha256": "57135df65600e7318e4f949e73ad29140c44985532f8a8611d1f8f0e9a914845",
+      "parents": [
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x1F000"
+        },
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x1000"
+        }
+      ],
+      "cluster": 4,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_008_5bc8a901.png",
+      "sha256": "5bc8a9018897d847bda310382af5c45a597cef5b9a1c306571094680c26800fc",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x1B000"
+        },
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x1A800"
+        }
+      ],
+      "cluster": 0,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_009_121e1c8b.png",
+      "sha256": "121e1c8bfff31c113c9e05339627c925a638b24c8b19fc3acd14f9d0fd18b8be",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x1000"
+        },
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x1C000"
+        }
+      ],
+      "cluster": 4,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_010_a1de8f51.png",
+      "sha256": "a1de8f516178122a6534fbfefde197ce84faa48a7d2031e0a1e52220bd70f698",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x6800"
+        },
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x1800"
+        }
+      ],
+      "cluster": 3,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_011_795e5922.png",
+      "sha256": "795e592263c4f2475ca63aaf066c7f029d174ff50d2c1bbce088653c3ce472f9",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0xF000"
+        },
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x1C000"
+        }
+      ],
+      "cluster": 2,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_012_d7be7231.png",
+      "sha256": "d7be7231dc54159ad71bd3bd1f4ad112e90b1bc4d4dea8437be59549b2864297",
+      "parents": [
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x1B800"
+        },
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x13800"
+        }
+      ],
+      "cluster": 2,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_013_1e56a671.png",
+      "sha256": "1e56a671651f635fcd5b0d39fce04e78fe296b8df276e1891c5c18695e2318e5",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x1D000"
+        },
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0xD000"
+        }
+      ],
+      "cluster": 5,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_014_b4f92c6a.png",
+      "sha256": "b4f92c6a937a0dd17ef4b73a613dc4eed1533ecf199a39b5740c7cc8405aac87",
+      "parents": [
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x13000"
+        },
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x8000"
+        }
+      ],
+      "cluster": 5,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    },
+    {
+      "file": "synth_015_f650e313.png",
+      "sha256": "f650e3135c456d99b66ca9b50017a049d88429b6fd49ac500160dc3cdfd5abef",
+      "parents": [
+        {
+          "rom": "gamejam2024.z64",
+          "offset": "0x1F800"
+        },
+        {
+          "rom": "junkrunner.z64",
+          "offset": "0x1D000"
+        }
+      ],
+      "cluster": 4,
+      "novel": true,
+      "provenance": "recombinant \u2014 descends from 2 corpus tiles, not a copy"
+    }
+  ]
+}
